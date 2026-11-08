@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nightCozy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D1124"/>
+      <stop offset="50%" stop-color="#4A1C35"/>
+      <stop offset="100%" stop-color="#6D2947"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3D6" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#FFD180" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6D2947" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#nightCozy)"/>
+
+  <!-- Fairy Lights String -->
+  <path d="M 0 80 Q 150 140 300 90 T 600 110" stroke="#C58A91" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Glowing Bulbs -->
+  <g fill="#FFE082">
+    <circle cx="80" cy="105" r="7"/>
+    <circle cx="160" cy="118" r="8"/>
+    <circle cx="240" cy="105" r="7"/>
+    <circle cx="320" cy="95" r="8"/>
+    <circle cx="400" cy="100" r="7"/>
+    <circle cx="480" cy="105" r="8"/>
+    <circle cx="550" cy="110" r="7"/>
+  </g>
+  <!-- Bulb halos -->
+  <g fill="#FFF9C4" opacity="0.4">
+    <circle cx="80" cy="105" r="16"/>
+    <circle cx="160" cy="118" r="18"/>
+    <circle cx="240" cy="105" r="16"/>
+    <circle cx="320" cy="95" r="18"/>
+    <circle cx="400" cy="100" r="16"/>
+    <circle cx="480" cy="105" r="18"/>
+    <circle cx="550" cy="110" r="16"/>
+  </g>
+
+  <!-- Big Warm Lamp Glow in Center -->
+  <circle cx="300" cy="360" r="220" fill="url(#lampGlow)"/>
+
+  <!-- Cozy Window with stars/rain outside -->
+  <rect x="180" y="160" width="240" height="200" rx="16" fill="#1C0A17" stroke="#C58A91" stroke-width="4"/>
+  <line x1="300" y1="160" x2="300" y2="360" stroke="#C58A91" stroke-width="3"/>
+  <line x1="180" y1="260" x2="420" y2="260" stroke="#C58A91" stroke-width="3"/>
+
+  <!-- Crescent Moon in window -->
+  <path d="M 360 200 A 18 18 0 0 0 340 226 A 22 22 0 1 1 360 200 Z" fill="#FFE082"/>
+
+  <!-- Cozy Tabletop -->
+  <path d="M 100 480 Q 300 460 500 480 L 520 600 L 80 600 Z" fill="#3D1426"/>
+
+  <!-- Two Steaming Mugs of Hot Chocolate / Chai with Latte Art Hearts -->
+  <!-- Mug 1 (Blush Pink) -->
+  <g transform="translate(230, 430)">
+    <rect x="0" y="20" width="55" height="60" rx="8" fill="#F5C8D8"/>
+    <path d="M 55 35 Q 75 48 55 62" stroke="#F5C8D8" stroke-width="7" fill="none"/>
+    <!-- Heart in mug -->
+    <ellipse cx="27" cy="20" rx="27" ry="10" fill="#6D2947"/>
+    <path d="M 27 20 C 27 17, 22 14, 19 18 C 16 22, 20 26, 27 30 C 34 26, 38 22, 35 18 C 32 14, 27 17, 27 20 Z" fill="#FFF9F7" transform="scale(0.7) translate(11, 4)"/>
+    <!-- Steam -->
+    <path d="M 20 10 Q 15 0 25 -10" stroke="#FFF" stroke-width="2.5" fill="none" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 35 8 Q 40 -2 30 -12" stroke="#FFF" stroke-width="2.5" fill="none" opacity="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Mug 2 (Soft Cream / Rose Gold) -->
+  <g transform="translate(320, 430)">
+    <rect x="0" y="20" width="55" height="60" rx="8" fill="#FFF9F7"/>
+    <path d="M 55 35 Q 75 48 55 62" stroke="#FFF9F7" stroke-width="7" fill="none"/>
+    <!-- Heart in mug -->
+    <ellipse cx="27" cy="20" rx="27" ry="10" fill="#6D2947"/>
+    <path d="M 27 20 C 27 17, 22 14, 19 18 C 16 22, 20 26, 27 30 C 34 26, 38 22, 35 18 C 32 14, 27 17, 27 20 Z" fill="#F5C8D8" transform="scale(0.7) translate(11, 4)"/>
+    <!-- Steam -->
+    <path d="M 20 10 Q 15 0 25 -10" stroke="#FFF" stroke-width="2.5" fill="none" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 35 8 Q 40 -2 30 -12" stroke="#FFF" stroke-width="2.5" fill="none" opacity="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Small Love Note on table -->
+  <rect x="250" y="520" width="100" height="50" rx="4" fill="#FFFDF9" transform="rotate(-6, 250, 520)"/>
+  <line x1="265" y1="535" x2="335" y2="530" stroke="#C58A91" stroke-width="2"/>
+  <line x1="265" y1="547" x2="320" y2="542" stroke="#C58A91" stroke-width="2"/>
+  <text x="325" y="560" font-family="'Great Vibes', cursive" font-size="16" fill="#6D2947">You &amp; Me</text>
+</svg>
+

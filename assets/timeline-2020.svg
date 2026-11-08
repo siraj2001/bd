@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="t1Sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A1E34"/>
+      <stop offset="60%" stop-color="#8C3A5A"/>
+      <stop offset="100%" stop-color="#FCD5CE"/>
+    </linearGradient>
+    <radialGradient id="t1Sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FFDEB4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FCD5CE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#t1Sky)"/>
+  <circle cx="300" cy="220" r="140" fill="url(#t1Sun)"/>
+
+  <!-- College & Office Building Silhouette -->
+  <g fill="#2C0E1E" opacity="0.85">
+    <!-- Office Building -->
+    <rect x="80" y="160" width="110" height="180" rx="3"/>
+    <rect x="95" y="180" width="16" height="22" fill="#FFE082" opacity="0.6"/>
+    <rect x="125" y="180" width="16" height="22" fill="#FFE082" opacity="0.8"/>
+    <rect x="155" y="180" width="16" height="22" fill="#FFE082" opacity="0.5"/>
+    <rect x="95" y="220" width="16" height="22" fill="#FFE082" opacity="0.7"/>
+    <rect x="125" y="220" width="16" height="22" fill="#FFE082" opacity="0.4"/>
+    <rect x="155" y="220" width="16" height="22" fill="#FFE082" opacity="0.7"/>
+    
+    <!-- College Clock Tower -->
+    <rect x="410" y="130" width="90" height="210" rx="4"/>
+    <polygon points="410,130 455,80 500,130"/>
+    <circle cx="455" cy="145" r="14" fill="#FFE082"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M 0 320 Q 300 300 600 320 L 600 400 L 0 400 Z" fill="#1C0613"/>
+
+  <!-- Two Silhouettes crossing paths -->
+  <!-- Him -->
+  <g fill="#FFF9F7" transform="translate(210, 250) scale(0.9)">
+    <circle cx="20" cy="20" r="12" fill="#F5C8D8"/>
+    <path d="M 10 35 C 10 32, 30 32, 30 35 L 35 90 L 5 90 Z" fill="#F5C8D8"/>
+  </g>
+  <!-- Her with backpack -->
+  <g fill="#FFF9F7" transform="translate(340, 250) scale(0.9)">
+    <circle cx="20" cy="20" r="11" fill="#EAA9BF"/>
+    <path d="M 10 35 C 10 32, 30 32, 30 35 L 36 90 L 4 90 Z" fill="#EAA9BF"/>
+    <!-- Cute backpack -->
+    <rect x="3" y="42" width="9" height="20" rx="3" fill="#C58A91"/>
+  </g>
+
+  <!-- Question mark / glance between them -->
+  <path d="M 245 270 Q 285 240 325 270" stroke="#FFF" stroke-width="2" stroke-dasharray="6,6" fill="none" opacity="0.6"/>
+
+  <!-- Badge: 2020 -->
+  <rect x="250" y="40" width="100" height="34" rx="17" fill="#FFFFFF" opacity="0.9"/>
+  <text x="300" y="63" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="700" font-size="16" fill="#6D2947" letter-spacing="1">
+    YEAR 2020
+  </text>
+</svg>
+

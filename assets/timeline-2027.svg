@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="t4Sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A1C30"/>
+      <stop offset="45%" stop-color="#8C3A5A"/>
+      <stop offset="85%" stop-color="#FCD5CE"/>
+      <stop offset="100%" stop-color="#FFF0F5"/>
+    </linearGradient>
+    <radialGradient id="t4Glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#FFE8B2" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FCD5CE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldBand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3D6"/>
+      <stop offset="50%" stop-color="#E5AF68"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#t4Sky)"/>
+
+  <!-- Golden Sunrise Aura -->
+  <circle cx="300" cy="200" r="140" fill="url(#t4Glow)"/>
+
+  <!-- Floral Wedding Arch -->
+  <path d="M 170 340 C 170 120, 430 120, 430 340" stroke="#C58A91" stroke-width="4" fill="none"/>
+  <path d="M 185 340 C 185 140, 415 140, 415 340" stroke="#FFF" stroke-width="1.5" stroke-dasharray="5,5" fill="none"/>
+
+  <!-- Floral Clusters on Arch -->
+  <g fill="#F5C8D8">
+    <circle cx="300" cy="130" r="16"/>
+    <circle cx="280" cy="138" r="12" fill="#EAA9BF"/>
+    <circle cx="320" cy="138" r="12" fill="#EAA9BF"/>
+    <circle cx="200" cy="200" r="14"/>
+    <circle cx="400" cy="200" r="14"/>
+  </g>
+
+  <!-- Interlocking Wedding Rings in Arch Center -->
+  <g transform="translate(300, 220) scale(0.75)">
+    <!-- Ring 1 (Gold) -->
+    <circle cx="-25" cy="0" r="40" fill="none" stroke="url(#goldBand)" stroke-width="9"/>
+    <!-- Ring 2 (Rose Gold with Diamond) -->
+    <circle cx="25" cy="0" r="40" fill="none" stroke="#C58A91" stroke-width="9"/>
+    <!-- Sparkle Gem -->
+    <polygon points="50,-35 60,-22 45,-15 35,-28" fill="#FFF" stroke="#EAA9BF" stroke-width="1.5"/>
+  </g>
+
+  <!-- Couple Silhouette Walking Hand in Hand into Forever -->
+  <g fill="#210815" transform="translate(265, 270) scale(0.7)">
+    <!-- Him -->
+    <circle cx="30" cy="20" r="11" fill="#F5C8D8"/>
+    <path d="M 18 32 C 18 28, 42 28, 42 32 L 46 80 L 14 80 Z" fill="#F5C8D8"/>
+    <!-- Her -->
+    <circle cx="65" cy="24" r="10" fill="#EAA9BF"/>
+    <path d="M 52 35 C 52 30, 78 30, 78 35 L 85 82 L 48 82 Z" fill="#EAA9BF"/>
+  </g>
+
+  <!-- May 2027 Plaque -->
+  <g transform="translate(230, 340)">
+    <rect x="0" y="0" width="140" height="34" rx="17" fill="#FFFFFF" opacity="0.95" stroke="#C58A91" stroke-width="1.5"/>
+    <text x="70" y="23" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="700" font-size="15" fill="#6D2947" letter-spacing="1">
+      MAY 2027 💍
+    </text>
+  </g>
+</svg>
+

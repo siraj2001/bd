@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" class="is-locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AALIYAAAA – A Little World Made Just For You ❤️</title>
+  <meta name="description" content="A beautiful, interactive birthday surprise and love story for my future wife, Aaliyaaaa. Counting down to May 2027.">
+  <meta name="theme-color" content="#F5C8D8">
+
+  <!-- Favicon Heart -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+
+  <!-- Google Fonts: Playfair Display, Great Vibes, Parisienne, DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-locked">
+
+  <!-- Ambient Floating Petals & Hearts Canvas -->
+  <canvas id="ambient-particles-canvas"></canvas>
+
+  <!-- ========================================================================
+       ENVELOPE-FIRST EXPERIENCE: SECRET INVITATION & SURPRISE GATEWAY
+       (Only this screen is visible initially. All other content is locked.)
+       ======================================================================== -->
+  <main class="invitation-gate-section" id="invitation-gate">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="container gate-container">
+      <!-- Header Invitation -->
+      <div class="gate-header">
+        <div class="hero-badge">
+          <span>✨</span>
+          <span>A Little World Made Just For You</span>
+          <span>✨</span>
+        </div>
+
+        <div class="hero-name-container">
+          <h1 class="hero-name">Aaliyaaaa</h1>
+          <div class="hero-name-flourish"></div>
+        </div>
+
+        <p class="hero-subtitle">
+          Some people make the world feel softer, brighter, and a little more magical. You are that person for me.
+        </p>
+
+        <p class="gate-invitation-subtext">
+          Before anything else, there's a little surprise waiting for you.
+        </p>
+      </div>
+
+      <!-- 3D Closed Pink Envelope with Wax Seal (SVG Precision Architecture) -->
+      <div class="envelope-wrapper">
+        <div class="envelope-stage" id="envelope-box" title="Click to open your surprise">
+          <!-- Envelope Base / Back Cavity -->
+          <div class="envelope-back-plate"></div>
+
+          <!-- Letter Sheet tucked inside (rises out of the pocket when opened) -->
+          <div class="envelope-sheet" id="envelope-sheet">
+            <div class="sheet-inner">
+              <svg class="sheet-crest" viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="22" fill="none" stroke="#C58A91" stroke-width="1" opacity="0.7"/>
+                <circle cx="24" cy="24" r="18.5" fill="none" stroke="#C58A91" stroke-width="0.6" stroke-dasharray="1.5 2.5" opacity="0.7"/>
+                <path d="M24 33.5l-1.3-1.2C17.9 28 15 25.4 15 22.1c0-2.6 2-4.6 4.6-4.6 1.5 0 2.9.7 3.8 1.8.9-1.1 2.3-1.8 3.8-1.8 2.6 0 4.6 2 4.6 4.6 0 3.3-2.9 5.9-7.7 10.2L24 33.5z" fill="#A83B64"/>
+              </svg>
+              <h3 class="sheet-title">For My Aaliyaaaa</h3>
+              <div class="sheet-divider"><span></span><i>♡</i><span></span></div>
+              <p class="sheet-text">A birthday surprise, wrapped with all my love…</p>
+              <span class="sheet-signoff">Happy Birthday</span>
+            </div>
+          </div>
+
+          <!-- Front Pocket SVG (Left, Right, and Bottom Flaps) -->
+          <svg class="envelope-pocket-svg" viewBox="0 0 500 320" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="pocketLeftGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#F5C8D8"/>
+                <stop offset="100%" stop-color="#EAA9BF"/>
+              </linearGradient>
+              <linearGradient id="pocketRightGrad" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#F8CED9"/>
+                <stop offset="100%" stop-color="#E59FB6"/>
+              </linearGradient>
+              <linearGradient id="pocketBottomGrad" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="#DE91A9"/>
+                <stop offset="100%" stop-color="#F2BACB"/>
+              </linearGradient>
+              <filter id="bottomShadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="-2" stdDeviation="3" flood-color="#6D2947" flood-opacity="0.1"/>
+              </filter>
+            </defs>
+            <!-- Left Flap -->
+            <path d="M 0 0 L 250 170 L 0 320 Z" fill="url(#pocketLeftGrad)"/>
+            <!-- Right Flap -->
+            <path d="M 500 0 L 250 170 L 500 320 Z" fill="url(#pocketRightGrad)"/>
+            <!-- Bottom Flap -->
+            <path d="M 0 320 L 250 165 L 500 320 Z" fill="url(#pocketBottomGrad)" filter="url(#bottomShadow)"/>
+          </svg>
+
+          <!-- Top Opening Flap (Animated 3D Hinge) -->
+          <div class="envelope-top-flap" id="envelope-top-flap">
+            <svg class="flap-svg" viewBox="0 0 500 185" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="topFlapGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#F7CBD9"/>
+                  <stop offset="100%" stop-color="#EAA9BF"/>
+                </linearGradient>
+                <filter id="topFlapShadow" x="-10%" y="-10%" width="120%" height="120%">
+                  <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6D2947" flood-opacity="0.2"/>
+                </filter>
+              </defs>
+              <path d="M 0 0 L 250 185 L 500 0 Z" fill="url(#topFlapGradient)" filter="url(#topFlapShadow)"/>
+            </svg>
+
+            <!-- Heart-shaped Wax Seal -->
+            <div class="wax-seal" id="wax-seal" title="Tap Wax Seal to Open">
+              <span class="wax-seal-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Open Surprise CTA (Visible before envelope is opened) -->
+        <div class="gate-cta-wrapper" id="gate-cta-wrapper">
+          <button type="button" class="open-surprise-btn" id="open-surprise-btn">
+            <span>Open Your Surprise</span>
+            <span class="open-surprise-heart">❤️</span>
+          </button>
+          <span class="hero-subtext">A birthday surprise, wrapped with all my love.</span>
+        </div>
+      </div>
+
+      <!-- Revealed Birthday Letter & Interactive Cake (Revealed on click) -->
+      <div class="birthday-reveal-card" id="birthday-reveal-card">
+        <h2 class="birthday-reveal-title">Happy Birthday, my Muttabondaaa! ❤️</h2>
+        <p class="birthday-reveal-text">
+          Yes, this entire website is for you, Besharam!
+        </p>
+        <p class="birthday-reveal-text">
+          Don't smile too much after seeing all this. 😂
+        </p>
+        <p class="birthday-reveal-text">
+          But seriously, you deserve every bit of happiness in this world. Today is all about celebrating the beautiful, silly, adorable person you are.
+        </p>
+
+        <!-- Interactive Birthday Cake -->
+        <div class="birthday-cake-container" id="birthday-cake" title="Click the candle to make a wish!">
+          <div class="cake-flame" id="cake-flame"></div>
+          <div class="cake-candle"></div>
+          <div class="cake-body">
+            <div class="cake-icing"></div>
+            <span style="font-size: 20px;">🍓🎂🍓</span>
+          </div>
+          <span class="cake-wish-prompt" id="cake-wish-prompt">Make a wish &amp; tap the candle 🎂✨</span>
+        </div>
+
+        <!-- CONTINUE OUR STORY BUTTON: Gateway to the full website -->
+        <div class="continue-story-wrapper" id="continue-story-wrapper">
+          <button type="button" class="continue-story-btn" id="continue-story-btn">
+            <span>Continue Our Story</span>
+            <span class="continue-heart">♡</span>
+          </button>
+          <div class="continue-story-hint">
+            <span>Unlock our memories, love notes &amp; wedding countdown</span>
+            <span class="continue-arrow">↓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       UNLOCKED LOVE STORY CONTAINER
+       (Completely hidden initially. Unlocks ONLY after clicking "Continue Our Story ♡")
+       ======================================================================== -->
+  <div id="unlocked-story" class="unlocked-story story-locked">
+
+    <!-- ======================================================================
+         2. OUR STORY – FROM 2020 TO FOREVER ❤️
+         ====================================================================== -->
+    <section class="section our-story-section" id="our-story">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">OUR STORY – FROM 2020 TO FOREVER ❤️</span>
+          <h2 class="section-title">It Started With One Message...</h2>
+          <div class="floral-divider">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <p class="section-subtitle">
+            Sometimes the most beautiful stories don't begin when we first meet someone. They begin when the timing is finally right.
+          </p>
+        </div>
+
+        <!-- Personal Story Letter Card -->
+        <div class="story-letter-card reveal-on-scroll">
+          <div class="story-letter-stamp">💌 2020 ➔ 2027</div>
+          <div class="story-letter-salutation">Aaliyaaaa,</div>
+          
+          <div class="story-letter-body">
+            <p>I have known you since 2020.</p>
+            <p>We were in the same college, and even in the same office at one point. We crossed paths, were around each other, and yet somehow never really got the chance to speak or interact much.</p>
+            <p>Life had its own plans, I guess.</p>
+            <p class="story-highlight-quote">"Who would have thought that one unexpected message from you would change everything?"</p>
+            <p>One simple message became conversations. Those conversations slowly became something special. And somewhere along the way, two souls who had known of each other for years started getting to know each other in a completely different way.</p>
+            <p>It's been just a year, not even a full year, and look where life has brought us.</p>
+            <p>From barely speaking to sharing dreams.</p>
+            <p>From being familiar faces to becoming important parts of each other's lives.</p>
+            <p>From two people who couldn't find a moment to talk to two souls preparing to spend a lifetime together.</p>
+            <p>Sometimes the most beautiful stories don't begin when we first meet someone. They begin when the timing is finally right.</p>
+            <p><strong>And ours? It started with one message.</strong></p>
+            <p>Now it's leading us towards May 2027, towards a new beginning, a new home, countless memories, and a lifetime of togetherness.</p>
+            <p>I still find it beautiful how someone I knew since 2020 could suddenly become someone I can't imagine my future without.</p>
+            <p>Maybe we were always meant to cross paths. We just needed the right moment to find each other.</p>
+            <p>From 2020 acquaintances to 2027 forever.</p>
+            <p>And Aaliyaaaa, if I could go back and change anything, I wouldn't change a thing. Because somehow, every missed conversation brought us closer to this moment.</p>
+            <p>Here's to our story, our journey, and everything that's waiting for us.</p>
+          </div>
+
+          <div class="story-letter-footer">
+            <span class="story-signature">One message. Two souls. One lifetime. ❤️</span>
+          </div>
+        </div>
+
+        <!-- Scrapbook Timeline (4 Animated Milestones) -->
+        <div class="story-timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Milestone 1 -->
+          <div class="timeline-milestone reveal-on-scroll" data-milestone="1">
+            <div class="milestone-badge">2020</div>
+            <div class="milestone-card">
+              <div class="milestone-polaroid">
+                <div class="milestone-img-wrap">
+                  <img src="assets/timeline-2020.svg" alt="2020 The First Crossing" class="polaroid-img" id="img-story-1">
+                </div>
+              </div>
+              <div class="milestone-info">
+                <span class="milestone-tag">Chapter 1</span>
+                <h3 class="milestone-title">2020 – The First Crossing</h3>
+                <p class="milestone-desc">"Same college. Same office. Two familiar faces, but barely any conversations."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-milestone reveal-on-scroll" data-milestone="2">
+            <div class="milestone-badge">✨</div>
+            <div class="milestone-card reverse">
+              <div class="milestone-polaroid">
+                <div class="milestone-img-wrap">
+                  <img src="assets/timeline-message.svg" alt="The Unexpected Message" class="polaroid-img" id="img-story-2">
+                </div>
+              </div>
+              <div class="milestone-info">
+                <span class="milestone-tag">The Turning Point</span>
+                <h3 class="milestone-title">The Unexpected Message</h3>
+                <p class="milestone-desc">"One message from you changed a story I never knew was waiting to happen."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-milestone reveal-on-scroll" data-milestone="3">
+            <div class="milestone-badge">🫶</div>
+            <div class="milestone-card">
+              <div class="milestone-polaroid">
+                <div class="milestone-img-wrap">
+                  <img src="assets/timeline-connection.svg" alt="Our Connection Two Souls" class="polaroid-img" id="img-story-3">
+                </div>
+              </div>
+              <div class="milestone-info">
+                <span class="milestone-tag">Two Souls</span>
+                <h3 class="milestone-title">Our Connection – Two Souls</h3>
+                <p class="milestone-desc">"Conversations became memories, and a connection became something precious."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="timeline-milestone reveal-on-scroll" data-milestone="4">
+            <div class="milestone-badge">💍</div>
+            <div class="milestone-card reverse">
+              <div class="milestone-polaroid">
+                <div class="milestone-img-wrap">
+                  <img src="assets/timeline-2027.svg" alt="May 2027 Our Forever" class="polaroid-img" id="img-story-4">
+                </div>
+              </div>
+              <div class="milestone-info">
+                <span class="milestone-tag">Our Destiny</span>
+                <h3 class="milestone-title">May 2027 – Our Forever</h3>
+                <p class="milestone-desc">"From barely knowing each other to preparing for a lifetime together."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Central Playful Nickname Quote Banner -->
+        <div class="story-central-banner reveal-on-scroll">
+          <p class="banner-playful-quote">
+            "2020-la just a familiar face... one message later, my Muttabonda became my forever. 😂❤️"
+          </p>
+          <div class="banner-sub-quote">
+            One message. Two souls. From 2020 to May 2027. One lifetime together. 💍
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. OUR MEMORY CORNER – PHOTO GALLERY (SCRAPBOOK)
+         ====================================================================== -->
+    <section class="section memory-section" id="memories">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Scrapbook of Us</span>
+          <h2 class="section-title">Our Memory Corner</h2>
+          <div class="floral-divider">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <p class="section-subtitle">
+            Nine little snapshots of our story, and every one of them is a memory I'll treasure forever. ❤️
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Photo 1: Our Favourite Moment -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-1" style="--rot: -3.5deg; --tape-rot: 1.5deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/beach-first-meet.jpg" alt="Our Favourite Moment - First Meet At The Beach" class="polaroid-img" id="img-photo-1">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">1. Our Favourite Moment</span>
+              <div class="polaroid-caption" id="caption-photo-1">"Our first meet at the beach, dropping you at the airport, and that legendary costly bread omelette! 😂 Who knew such a simple day would become one of my favourite memories? The beach, the journey, the costliest bread omelette for 5k... IYKYK! ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 2: A Day to Remember ❤️ -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-2" style="--rot: 2.8deg; --tape-rot: -2deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/chetpet-eco-park.jpg" alt="A Day to Remember - Chetpet Eco Park" class="polaroid-img" id="img-photo-2">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">2. A Day to Remember ❤️</span>
+              <div class="polaroid-caption" id="caption-photo-2">"Bus, train, Rapido... somehow we made our way to Chetpet Eco Park! Found our favourite spot for fried rice, enjoyed our little adventure, and then life suddenly had other plans. With Zaid admitted to the hospital, we rushed back, and I still had to drop you home late at night. What a day! So many little moments packed into one memory. IYKYK! ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 3: 29 November 2025 – Blue Flag Beach (Cyclone Alert Day) -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-3" style="--rot: -2.2deg; --tape-rot: 2.5deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/blue-flag-beach-cyclone.jpg" alt="29 November 2025 - Blue Flag Beach on cyclone alert day" class="polaroid-img" id="img-photo-3">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">3. 29 November 2025</span>
+              <div class="polaroid-caption" id="caption-photo-3">"The whole city was silent because of the red alert. Everyone was thinking about the cyclone, but here we were at Blue Flag Beach, sitting together and waiting for it to cross! 😂 What a crazy day to make a memory. Of all the days, we chose a cyclone-alert day for our beach adventure. IYKYK! ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 4: Sunrise at Kovalam -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-4" style="--rot: 3.2deg; --tape-rot: -1.8deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/kovalam-sunrise.jpg" alt="Sunrise at Kovalam - a simple Sunday morning together" class="polaroid-img" id="img-photo-4">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">4. Sunrise at Kovalam</span>
+              <div class="polaroid-caption" id="caption-photo-4">"We went to Kovalam early in the morning to watch the sunrise. We took some pictures, enjoyed the beautiful morning, had chai, and bought fresh fish. It was just a simple Sunday morning, but it became one of my favourite memories because we were together. ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 5: 24 January 2026 – A Day with Your Family -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-5" style="--rot: -3.8deg; --tape-rot: 1deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/day-with-family.jpg" alt="24 January 2026 - A Day with Your Family" class="polaroid-img" id="img-photo-5">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">5. 24 January 2026 — A Day with Your Family</span>
+              <div class="polaroid-caption" id="caption-photo-5">"We met your mom and Iqra that day. It was raining heavily, but it turned out to be such a lovely day. I had a good time talking with your mom and got to know more about your family. It was a special day, and I'm glad I got to spend that time with them. ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 6: The Day Our Families Met -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-6" style="--rot: 2.2deg; --tape-rot: -2.2deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/families-met.jpg" alt="The Day Our Families Met" class="polaroid-img" id="img-photo-6">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">6. The Day Our Families Met</span>
+              <div class="polaroid-caption" id="caption-photo-6">"It was the first time both our families met, and the discussions became serious. We were both nervous about how everything would go, but Alhamdulillah, everything went so well. It turned into such a happy and memorable day for both of us. ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 7: Mannadi & Our Beach Iftar -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-7" style="--rot: -2.6deg; --tape-rot: 1.8deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/mannadi-iftar.jpg" alt="Mannadi and Our Beach Iftar" class="polaroid-img" id="img-photo-7" style="object-position: center 85%;">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">7. 🍜 Mannadi &amp; Our Beach Iftar</span>
+              <div class="polaroid-caption" id="caption-photo-7">"We went to Mannadi to explore the street food and try different dishes. It was such a fun time together. A week later, we had an Iftar party at the beach. The food you prepared was really good, and spending that evening together made it even more special. ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 8: Meeting Your Dad — My Broken Hindi Adventures -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-8" style="--rot: 3deg; --tape-rot: -1.5deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/meeting-your-dad.jpg" alt="Meeting Your Dad - My Broken Hindi Adventures" class="polaroid-img" id="img-photo-8" style="object-position: center 60%;">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">8. Meeting Your Dad — My Broken Hindi Adventures 😂</span>
+              <div class="polaroid-caption" id="caption-photo-8">"I finally met your dad! For two days, I was picking them up from the station, dropping them off, and roaming around with them. Somehow, I managed to communicate with my broken Hindi! 😂 It was a little funny, but I really enjoyed spending time with your family. ❤️"</div>
+            </div>
+          </div>
+
+          <!-- Photo 9: 21 October 2026 — Madam Finally Came Home! -->
+          <div class="polaroid-card reveal-on-scroll" data-id="photo-9" style="--rot: -1.8deg; --tape-rot: 2deg;">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-wrap">
+              <img src="assets/madam-came-home.jpg" alt="21 October 2026 - Madam Finally Came Home" class="polaroid-img" id="img-photo-9" style="object-position: center 40%;">
+            </div>
+            <div class="polaroid-info">
+              <span class="polaroid-category">9. 🏡 21 October 2026 — Madam Finally Came Home! ❤️</span>
+              <div class="polaroid-caption" id="caption-photo-9">"Madam finally came to my home! 😂 It was an unexpected visit, and I was so happy to see you meet everyone in my family. Seeing you at my home, spending time with everyone, and becoming a part of our family moments made that day really special. ❤️"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. THINGS I LOVE ABOUT YOU
+         ====================================================================== -->
+    <section class="section things-love-section" id="things-i-love">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Cherished Details</span>
+          <h2 class="section-title">Little Things That Make You Special</h2>
+          <div class="floral-divider">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <p class="section-subtitle">
+            Tap any card to reveal a secret little whisper just for you ♡
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- 1: Your Heart -->
+          <div class="love-card-container reveal-on-scroll">
+            <div class="love-card-inner">
+              <div class="love-card-front">
+                <div class="love-card-icon">🌸</div>
+                <h3 class="love-card-title">Your Heart</h3>
+                <p class="love-card-quote">"You have a way of making ordinary days feel special. Never forget how precious you are."</p>
+                <div class="love-card-hint"><span>Tap to flip</span> <span>♡</span></div>
+              </div>
+              <div class="love-card-back">
+                <span class="love-card-secret-title">Secret Whisper</span>
+                <p class="love-card-whisper">"Your kindness and gentle warmth melt away every worry I ever carry."</p>
+                <div class="love-card-hint" style="margin-top: 24px;"><span>Tap to flip back</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2: Your Smile -->
+          <div class="love-card-container reveal-on-scroll">
+            <div class="love-card-inner">
+              <div class="love-card-front">
+                <div class="love-card-icon">☺️</div>
+                <h3 class="love-card-title">Your Smile</h3>
+                <p class="love-card-quote">"One smile from you can make even my longest day feel lighter."</p>
+                <div class="love-card-hint"><span>Tap to flip</span> <span>♡</span></div>
+              </div>
+              <div class="love-card-back">
+                <span class="love-card-secret-title">Secret Whisper</span>
+                <p class="love-card-whisper">"Seeing you happy is honestly my favorite feeling in the entire universe."</p>
+                <div class="love-card-hint" style="margin-top: 24px;"><span>Tap to flip back</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3: Your Little Ways -->
+          <div class="love-card-container reveal-on-scroll">
+            <div class="love-card-inner">
+              <div class="love-card-front">
+                <div class="love-card-icon">🫶</div>
+                <h3 class="love-card-title">Your Little Ways</h3>
+                <p class="love-card-quote">"All the tiny things that make you you. I notice them, cherish them, and love them."</p>
+                <div class="love-card-hint"><span>Tap to flip</span> <span>♡</span></div>
+              </div>
+              <div class="love-card-back">
+                <span class="love-card-secret-title">Secret Whisper</span>
+                <p class="love-card-whisper">"From the way you tilt your head when you think, to your infectious laugh."</p>
+                <div class="love-card-hint" style="margin-top: 24px;"><span>Tap to flip back</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4: Your Presence -->
+          <div class="love-card-container reveal-on-scroll">
+            <div class="love-card-inner">
+              <div class="love-card-front">
+                <div class="love-card-icon">❤️</div>
+                <h3 class="love-card-title">Your Presence</h3>
+                <p class="love-card-quote">"Somehow, everything feels a little better when you're around."</p>
+                <div class="love-card-hint"><span>Tap to flip</span> <span>♡</span></div>
+              </div>
+              <div class="love-card-back">
+                <span class="love-card-secret-title">Secret Whisper</span>
+                <p class="love-card-whisper">"Even just sitting beside you in silence feels like the warmest home."</p>
+                <div class="love-card-hint" style="margin-top: 24px;"><span>Tap to flip back</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5: Your Cuteness -->
+          <div class="love-card-container reveal-on-scroll">
+            <div class="love-card-inner">
+              <div class="love-card-front">
+                <div class="love-card-icon">🦋</div>
+                <h3 class="love-card-title">Your Cuteness</h3>
+                <p class="love-card-quote">"Even your smallest expressions have a special place in my heart."</p>
+                <div class="love-card-hint"><span>Tap to flip</span> <span>♡</span></div>
+              </div>
+              <div class="love-card-back">
+                <span class="love-card-secret-title">Secret Whisper</span>
+                <p class="love-card-whisper">"You don't even have to try — you are naturally the most adorable person ever."</p>
+                <div class="love-card-hint" style="margin-top: 24px;"><span>Tap to flip back</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6: Our Little Moments -->
+          <div class="love-card-container reveal-on-scroll">
+            <div class="love-card-inner">
+              <div class="love-card-front">
+                <div class="love-card-icon">✨</div>
+                <h3 class="love-card-title">Our Little Moments</h3>
+                <p class="love-card-quote">"The silly conversations, the laughter, and the little memories that make our story ours."</p>
+                <div class="love-card-hint"><span>Tap to flip</span> <span>♡</span></div>
+              </div>
+              <div class="love-card-back">
+                <span class="love-card-secret-title">Secret Whisper</span>
+                <p class="love-card-whisper">"I replay our sweetest talks at night with the biggest smile on my face."</p>
+                <div class="love-card-hint" style="margin-top: 24px;"><span>Tap to flip back</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SECRET LOVE NOTES
+         ====================================================================== -->
+    <section class="section secret-notes-section" id="love-notes">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Folded Whispers</span>
+          <h2 class="section-title">Little Things Only We Understand 😂❤️</h2>
+          <div class="floral-divider">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <p class="section-subtitle">
+            Small notes written from the heart. Click each one to unfold and read.
+          </p>
+        </div>
+
+        <div class="notes-grid">
+          <!-- Note 1 -->
+          <div class="secret-note-item reveal-on-scroll">
+            <div class="note-header">
+              <span class="note-stamp">💌</span>
+              <span class="note-badge">Our Unexpected Beginning</span>
+            </div>
+            <div class="note-preview-wrapper">
+              <div class="note-locked-text">
+                <span>🔒 Tap to unfold note</span>
+              </div>
+              <div class="note-revealed-text">
+                "Last birthday, I was just admiring your pictures... and suddenly you messaged me. Honestly, it felt like a dream. Who knew one message from you would change everything?"
+              </div>
+            </div>
+            <div class="note-action"><span>Tap to open ♡</span></div>
+          </div>
+
+          <!-- Note 2 -->
+          <div class="secret-note-item reveal-on-scroll">
+            <div class="note-header">
+              <span class="note-stamp">🪿🛍️</span>
+              <span class="note-badge">My Favourite Besharam</span>
+            </div>
+            <div class="note-preview-wrapper">
+              <div class="note-locked-text">
+                <span>🔒 Tap to unfold note</span>
+              </div>
+              <div class="note-revealed-text">
+                "Unakku enna pa, ostrich theriyuma? 😂 And your bargaining! 500+ rupees ah? 150 kudu! Sometimes I feel more awkward than the shopkeeper. Plus, Mumbai is always on your mind. Besharam, we're not even in Mumbai! ❤️"
+              </div>
+            </div>
+            <div class="note-action"><span>Tap to open ♡</span></div>
+          </div>
+
+          <!-- Note 3 -->
+          <div class="secret-note-item reveal-on-scroll">
+            <div class="note-header">
+              <span class="note-stamp">✨</span>
+              <span class="note-badge">My Little 5-Year-Old</span>
+            </div>
+            <div class="note-preview-wrapper">
+              <div class="note-locked-text">
+                <span>🔒 Tap to unfold note</span>
+              </div>
+              <div class="note-revealed-text">
+                "With me, you're literally a 5-year-old kid. But I see how you handle your entire family and responsibilities. I adore that little girl and admire that strong woman in you. ❤️"
+              </div>
+            </div>
+            <div class="note-action"><span>Tap to open ♡</span></div>
+          </div>
+
+          <!-- Note 4 -->
+          <div class="secret-note-item reveal-on-scroll">
+            <div class="note-header">
+              <span class="note-stamp">🌷</span>
+              <span class="note-badge">IYKYK Moments</span>
+            </div>
+            <div class="note-preview-wrapper">
+              <div class="note-locked-text">
+                <span>🔒 Tap to unfold note</span>
+              </div>
+              <div class="note-revealed-text">
+                "Our first beach visit, airport pickups and drops... IYKYK. Some memories don't need long explanations. Just thinking about them makes me smile."
+              </div>
+            </div>
+            <div class="note-action"><span>Tap to open ♡</span></div>
+          </div>
+
+          <!-- Note 5 -->
+          <div class="secret-note-item reveal-on-scroll">
+            <div class="note-header">
+              <span class="note-stamp">💗</span>
+              <span class="note-badge">My Favourite Trouble</span>
+            </div>
+            <div class="note-preview-wrapper">
+              <div class="note-locked-text">
+                <span>🔒 Tap to unfold note</span>
+              </div>
+              <div class="note-revealed-text">
+                "When we don't talk, this Besharam won't let me stay quiet for long. Somehow you'll make me talk. And honestly, I love that about you."
+              </div>
+            </div>
+            <div class="note-action"><span>Tap to open ♡</span></div>
+          </div>
+
+          <!-- Note 6 -->
+          <div class="secret-note-item reveal-on-scroll">
+            <div class="note-header">
+              <span class="note-stamp">💍</span>
+              <span class="note-badge">May 2027, Hurry Up!</span>
+            </div>
+            <div class="note-preview-wrapper">
+              <div class="note-locked-text">
+                <span>🔒 Tap to unfold note</span>
+              </div>
+              <div class="note-revealed-text">
+                "Can't wait to wake up next to you, travel together, fight over silly things, cook together, build our little home and grow old together. May 2027, hurry up! ❤️"
+              </div>
+            </div>
+            <div class="note-action"><span>Tap to open ♡</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. PERSONAL BIRTHDAY LETTER
+         ====================================================================== -->
+    <section class="section letter-section" id="birthday-letter">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">From My Soul</span>
+          <h2 class="section-title">A Birthday Letter From My Heart</h2>
+          <div class="floral-divider">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+
+        <div class="letter-parchment reveal-on-scroll">
+          <div class="letter-header-wax">
+            <div class="letter-wax-crest">
+              <span>A</span>
+            </div>
+          </div>
+
+          <div class="letter-salutation">My dearest Muttabonda,</div>
+
+          <div class="letter-body">
+            <p><strong>Happy Birthday, my love.</strong></p>
+            <p>
+              Sometimes I wonder how one message from you changed so much. From barely talking to planning an entire lifetime together. And yes, you're still my favourite Besharam. ❤️
+            </p>
+            <p>
+              I wish I could wrap every beautiful thing in this world and place it in your hands today. You deserve a life filled with peace, laughter, good health, answered duas, and dreams that come true.
+            </p>
+            <p>
+              Thank you for being you. I hope you always feel appreciated, respected, understood, and loved — not just on your birthday, but on the ordinary days too.
+            </p>
+            <p>
+              I may not always find the perfect words, but I want you to know how special you are to me.
+            </p>
+            <p>
+              May this new year of your life bring you closer to everything your heart wishes for.
+            </p>
+            <p>
+              Keep smiling, keep shining, and never stop being your lovely self.
+            </p>
+            <p>
+              And one day, when we look back at all these little moments, I hope we smile at how our story kept growing — one memory, one laugh, and one beautiful day at a time.
+            </p>
+          </div>
+
+          <div class="letter-closing">
+            <p>With all my love, always. ❤️</p>
+            <div class="letter-signature-wrap">
+              <span class="letter-signature">Forever cheering for you ♡</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. OUR WEDDING COUNTDOWN – MAY 2027 💍 (CRITICAL SECTION)
+         ====================================================================== -->
+    <section class="section wedding-section" id="wedding-countdown">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="wedding-eyebrow">One More Beautiful Chapter Awaits...</span>
+          <h2 class="wedding-main-title">Our Forever Begins in May 2027 💍</h2>
+          <div class="floral-divider">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+
+        <!-- Wedding Love Message -->
+        <div class="wedding-story-card reveal-on-scroll">
+          <p class="wedding-story-text">
+            Today, I get to celebrate your birthday.
+          </p>
+          <p class="wedding-story-text">
+            And soon, I'll get to celebrate something even more beautiful — the beginning of our forever.
+          </p>
+          <p class="wedding-story-text">
+            May 2027 isn't just another month on the calendar.
+          </p>
+          <p class="wedding-story-text">
+            It's the month when our dreams, duas, and hopes begin a beautiful new chapter together.
+          </p>
+          <p class="wedding-story-text">
+            I can't wait for all the little things — waking up together, sharing laughter, making memories, supporting each other, and building a home filled with love and happiness.
+          </p>
+          <p class="wedding-story-text">
+            Until then, let's collect beautiful memories and count down to the day we become one family.
+          </p>
+        </div>
+
+        <!-- LIVE COUNTDOWN TIMER -->
+        <div class="countdown-container reveal-on-scroll">
+          <div class="countdown-label">
+            <span>💍</span>
+            <span id="countdown-label-text">Counting down to our forever.</span>
+            <span>✨</span>
+          </div>
+
+          <div class="countdown-grid">
+            <div class="countdown-card">
+              <span class="countdown-number" id="countdown-days">--</span>
+              <span class="countdown-unit">Days</span>
+            </div>
+            <div class="countdown-card">
+              <span class="countdown-number" id="countdown-hours">--</span>
+              <span class="countdown-unit">Hours</span>
+            </div>
+            <div class="countdown-card">
+              <span class="countdown-number" id="countdown-minutes">--</span>
+              <span class="countdown-unit">Minutes</span>
+            </div>
+            <div class="countdown-card">
+              <span class="countdown-number" id="countdown-seconds">--</span>
+              <span class="countdown-unit">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPECIAL PROMISE CARD -->
+        <div class="promise-card reveal-on-scroll">
+          <div class="promise-lead">Until May 2027, and for every day after that...</div>
+          <p class="promise-body">
+            I promise to keep choosing you, appreciating you, making you smile, and building a beautiful life with you.
+          </p>
+          <div class="promise-highlight">
+            You're not just part of my future.<br>
+            You're the future I've been looking forward to. ❤️
+          </div>
+        </div>
+
+        <!-- PLAYFUL BESHARAM WARNING CARD -->
+        <div class="warning-besharam-card reveal-on-scroll">
+          <div class="warning-badge">⚠️ Notice for May 2027 💍</div>
+          <p class="warning-text">
+            "Warning: May 2027 onwards, this Muttabonda is officially going to be my forever headache. 😂💍<br>
+            And honestly, I wouldn't want it any other way."
+          </p>
+        </div>
+
+        <!-- FINAL WEDDING ANIMATION – INTERLOCKING RINGS -->
+        <div class="wedding-rings-stage reveal-on-scroll" id="wedding-rings-stage">
+          <div class="rings-wrapper">
+            <div class="ring-item ring-gold"></div>
+            <div class="ring-item ring-rosegold">
+              <div class="ring-gem"></div>
+            </div>
+            <div class="ring-sparkles">✨ 💖 ✨</div>
+          </div>
+          <div class="rings-reveal-text">
+            Almost time to call you my forever. ♡
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. OUR FUTURE TOGETHER
+         ====================================================================== -->
+    <section class="section future-section" id="future">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Our Tomorrows</span>
+          <h2 class="section-title">The Best Chapters Are Still Ahead.</h2>
+          <div class="floral-divider">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+
+        <div class="future-card reveal-on-scroll">
+          <div class="future-sunset-icon">🌅</div>
+          <p class="future-message">
+            I don't know every detail of what the future holds, but I hope it is filled with little adventures, shared laughter, peaceful evenings, silly conversations, and countless reasons to be grateful.
+          </p>
+          <p class="future-message">
+            May we keep choosing kindness, patience, and each other as we build the life we've been dreaming of.
+          </p>
+          <p class="future-message">
+            I look forward to all the little things that will become our favourite memories.
+          </p>
+          <div class="future-highlight">
+            Here's to you, to us, and to all the love still waiting. ♡
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. FINAL BIRTHDAY SURPRISE & FOOTER
+         ====================================================================== -->
+    <footer class="section finale-section" id="finale">
+      <div class="container">
+        <div class="finale-content reveal-on-scroll">
+          <h2 class="finale-title">Happy Birthday, Muttabondaaa! ❤️</h2>
+          <p class="finale-text">Stay cute, stay crazy, stay Besharam.</p>
+          <p class="finale-text">Can't wait to annoy you for the rest of our lives.</p>
+          <p class="finale-text">May 2027... that's when our forever begins.</p>
+          <p class="finale-text">
+            Until then, let me keep making memories with you, making you smile, and reminding you how special you are.
+          </p>
+
+          <div class="finale-big-quote">
+            Your birthday today. Our forever tomorrow. ♡
+          </div>
+
+          <p class="finale-signature-text">Yours, forever. ❤️</p>
+
+          <div class="finale-actions">
+            <button type="button" class="btn-secondary" id="love-reaction-btn">
+              <span>Send Love Reaction</span>
+              <span>💕</span>
+            </button>
+            <button type="button" class="btn-secondary" id="replay-surprise-btn">
+              <span>Replay Surprise</span>
+              <span>✨</span>
+            </button>
+          </div>
+
+          <div class="site-footer">
+            Made with all my love, for Aaliyaaaa.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========================================================================
+       10. FLOATING BACKGROUND MUSIC PLAYER WIDGET
+       ======================================================================== -->
+  <aside class="floating-music-widget" id="music-toggle-btn" aria-label="Toggle romantic background music" title="Click to play/pause our romantic song">
+    <div class="music-disc-icon">♪</div>
+    <div class="music-details">
+      <span class="music-label">Our Soundtrack</span>
+      <span class="music-title" id="music-track-title">Our Romantic Melody</span>
+    </div>
+    <div class="music-waves" id="music-waves">
+      <div class="music-wave-bar"></div>
+      <div class="music-wave-bar"></div>
+      <div class="music-wave-bar"></div>
+      <div class="music-wave-bar"></div>
+    </div>
+    <span id="music-settings-icon" style="font-size: 14px; opacity: 0.7; margin-left: 4px;" title="Song options">⚙️</span>
+  </aside>
+
+  <!-- Music Options & Audio Upload Modal -->
+  <div class="music-modal-backdrop" id="music-modal-backdrop">
+    <div class="music-modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="music-modal-title">Our Romantic Music 🎵</h3>
+      <p style="font-size: 0.95rem; color: #6D2947; margin-bottom: 18px;">
+        Listen to our song, switch to the soft piano melody, or upload a different song.
+      </p>
+
+      <div class="volume-control-wrap">
+        <span>🔈</span>
+        <input type="range" min="0" max="1" step="0.05" value="0.55" class="volume-slider" id="volume-slider">
+        <span>🔊</span>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+        <button type="button" class="btn-secondary" id="song-default-btn" style="justify-content: center;">
+          🎵 Play Our Song
+        </button>
+        <button type="button" class="btn-secondary" id="synth-mode-btn" style="justify-content: center;">
+          🎹 Play Acoustic Piano Melody
+        </button>
+        <button type="button" class="btn-secondary" id="song-upload-btn" style="justify-content: center;">
+          📁 Upload Custom Song (.mp3)
+        </button>
+        <input type="file" accept="audio/*" id="song-upload-input" style="display: none;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Personalization Drawer Toggle (Gear icon) -->
+  <button class="settings-fab" id="settings-fab" title="Personalize & Edit Website">⚙️</button>
+
+  <div class="music-modal-backdrop" id="settings-modal">
+    <div class="music-modal-card">
+      <button class="modal-close-btn" id="settings-modal-close" aria-label="Close modal">&times;</button>
+      <h3 class="music-modal-title">Personalize This Gift 💝</h3>
+      <p style="font-size: 0.95rem; color: #6D2947; margin-bottom: 20px;">
+        Everything on this website is custom made for Aaliyaaaa. You can tap any memory caption or timeline text to edit it, change the wedding countdown date, or reset all edits back to the original.
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <button type="button" class="btn-secondary" id="wedding-date-toggle-btn" style="justify-content: center;">
+          📅 Change Wedding Countdown Date
+        </button>
+        <button type="button" class="btn-secondary" id="reset-all-btn" style="justify-content: center; color: #A83B64;">
+          ↺ Reset Captions &amp; Edits to Default
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

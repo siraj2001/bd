@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="t3Sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D1528"/>
+      <stop offset="60%" stop-color="#702A47"/>
+      <stop offset="100%" stop-color="#DE8CA4"/>
+    </linearGradient>
+    <radialGradient id="t3Lamp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3D6" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#FFD180" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#702A47" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#t3Sky)"/>
+
+  <!-- Fairy Lights Arc overhead -->
+  <path d="M 50 80 Q 300 140 550 80" stroke="#C58A91" stroke-width="2" fill="none"/>
+  <g fill="#FFE082">
+    <circle cx="100" cy="94" r="6"/>
+    <circle cx="180" cy="106" r="7"/>
+    <circle cx="260" cy="112" r="6"/>
+    <circle cx="340" cy="112" r="7"/>
+    <circle cx="420" cy="106" r="6"/>
+    <circle cx="500" cy="94" r="7"/>
+  </g>
+
+  <!-- Warm Table Glow -->
+  <circle cx="300" cy="270" r="160" fill="url(#t3Lamp)"/>
+
+  <!-- Cozy Cafe Bench & Couple Sharing Laughs -->
+  <g fill="#210815" transform="translate(190, 180)">
+    <!-- Boy leaning forward laughing -->
+    <circle cx="40" cy="20" r="14" fill="#F5C8D8"/>
+    <path d="M 25 38 C 25 32, 55 32, 55 38 L 65 110 L 15 110 Z" fill="#F5C8D8"/>
+    <!-- Girl smiling holding warm tea -->
+    <circle cx="180" cy="22" r="13" fill="#EAA9BF"/>
+    <path d="M 165 38 C 165 32, 195 32, 195 38 L 205 110 L 155 110 Z" fill="#EAA9BF"/>
+    
+    <!-- Table between them with two mugs -->
+    <rect x="75" y="75" width="70" height="35" rx="5" fill="#C58A91"/>
+    <!-- Steaming mugs with latte heart -->
+    <rect x="88" y="62" width="16" height="15" rx="2" fill="#FFF"/>
+    <rect x="116" y="62" width="16" height="15" rx="2" fill="#FFF"/>
+    <!-- Steam hearts -->
+    <path d="M 96 52 Q 92 45 98 40" stroke="#FFF" stroke-width="2" fill="none"/>
+    <path d="M 124 52 Q 128 45 122 40" stroke="#FFF" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Chat Bubbles floating in the air -->
+  <g transform="translate(245, 120) scale(0.85)">
+    <rect x="0" y="0" width="130" height="38" rx="19" fill="#FFFFFF" opacity="0.95"/>
+    <text x="65" y="24" text-anchor="middle" font-family="'DM Sans', sans-serif" font-weight="700" font-size="14" fill="#6D2947">
+      Hours feel like mins ✨
+    </text>
+  </g>
+</svg>
+

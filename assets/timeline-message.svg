@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="msgBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="60%" stop-color="#FCE4EC"/>
+      <stop offset="100%" stop-color="#F8BBD0"/>
+    </radialGradient>
+    <filter id="msgGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#msgBg)"/>
+
+  <!-- Starry / Sparkle Aura -->
+  <g fill="#C58A91" opacity="0.6">
+    <circle cx="120" cy="80" r="3"/>
+    <circle cx="480" cy="90" r="3.5"/>
+    <circle cx="100" cy="300" r="2.5"/>
+    <circle cx="500" cy="320" r="3"/>
+  </g>
+
+  <!-- Giant Glowing Smartphone Frame -->
+  <g transform="translate(230, 60)">
+    <!-- Phone Body -->
+    <rect x="0" y="0" width="140" height="270" rx="24" fill="#2E1122" stroke="#C58A91" stroke-width="4"/>
+    <!-- Screen -->
+    <rect x="8" y="10" width="124" height="250" rx="16" fill="#FFFDF9"/>
+    <!-- Speaker Notch -->
+    <rect x="52" y="16" width="36" height="5" rx="2.5" fill="#C58A91"/>
+    
+    <!-- Heart Message Notification Bubble popping out -->
+    <g transform="translate(-50, 80)" filter="url(#msgGlow)">
+      <rect x="0" y="0" width="240" height="85" rx="18" fill="#FFFFFF" stroke="#EAA9BF" stroke-width="2"/>
+      <!-- Sender Avatar (Aaliyaaaa) -->
+      <circle cx="36" cy="42" r="22" fill="#F5C8D8"/>
+      <text x="36" y="49" text-anchor="middle" font-size="20">🌸</text>
+      <!-- Notification Header -->
+      <text x="70" y="34" font-family="'DM Sans', sans-serif" font-weight="700" font-size="14" fill="#6D2947">Aaliyaaaa</text>
+      <text x="195" y="34" font-family="'DM Sans', sans-serif" font-size="11" fill="#C58A91">Just now</text>
+      <!-- Message Preview -->
+      <text x="70" y="55" font-family="'DM Sans', sans-serif" font-size="12" fill="#7A3A54">"Hey!..."</text>
+      <text x="70" y="70" font-family="'Great Vibes', cursive" font-size="14" fill="#E63946">The message that changed everything ♡</text>
+    </g>
+  </g>
+
+  <!-- Sparkles Radiating around Phone -->
+  <g fill="#FF8BA7">
+    <path d="M 140 180 Q 140 195 125 195 Q 140 195 140 210 Q 140 195 155 195 Q 140 195 140 180 Z"/>
+    <path d="M 450 140 Q 450 155 435 155 Q 450 155 450 170 Q 450 155 465 155 Q 450 155 450 140 Z"/>
+  </g>
+</svg>
+
